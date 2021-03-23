@@ -7,7 +7,7 @@ package project.pkg1;
 
 /**
  *
- * @author faiz_on
+ * @author Faizan Hussain
  */
 import java.util.Scanner;
 public class creditMain extends CreditCard {
@@ -17,15 +17,15 @@ public class creditMain extends CreditCard {
         Scanner sc = new Scanner (System.in); 
         
         
-        System.out.println("Enter name"); 
+        System.out.println("Enter your name");
         String name = sc.nextLine();
         credit.setName(name);
         
-                System.out.println("Enter account number"); 
+                System.out.println("Enter your account number");
         String number = sc.next();
         credit.setNumber(number);
         
-                System.out.println("enter balance "); 
+                System.out.println("enter your balance ");
         Double balance = sc.nextDouble();
         credit.setBalance(balance);
         
@@ -43,21 +43,21 @@ public class creditMain extends CreditCard {
         System.out.println ("Reward Points: " + credit.getPoints());
         System.out.println ("Due Date: " + credit.getDueDate());
         
-        System.out.println("Interest charged");
+        System.out.println("Enter your interest rate");
        credit.interest(sc.nextDouble());
-       System.out.println("New balance: " + credit.getBalance());
+       System.out.println("Your new balance is: " + credit.getBalance());
        
        System.out.println("Enter the amount you want to charge to your card");
        credit.spentBalance(sc.nextDouble());
-       System.out.println("New balance: " + credit.getBalance());
+       System.out.println("Your new balance is: " + credit.getBalance());
        
-       System.out.println("Enter payment");
+       System.out.println("Enter payment towards credit card bill");
        credit.payment(sc.nextDouble());
-       System.out.println("New balance: " + credit.getBalance());
+       System.out.println("Your new balance: " + credit.getBalance());
        
        System.out.println("Enter how much you want to withdraw");
        credit.advance(sc.nextDouble());
-       System.out.println("New balance: " + credit.getBalance());
+       System.out.println("Your new balance is: " + credit.getBalance());
     }
     
 }

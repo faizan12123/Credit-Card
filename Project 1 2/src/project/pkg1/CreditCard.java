@@ -8,7 +8,7 @@ package project.pkg1;
 
 /**
  *
- * @author faiz_on
+ * @author Faizan Hussain
  */
 public class CreditCard {
 private String name;
@@ -38,7 +38,7 @@ private String name;
     void setName (String name) {
         this.name = name; 
     }
-    void setNumber ( String nunber) {
+    void setNumber ( String number) {
         this.number = number; 
     }
     String getNumber (){
